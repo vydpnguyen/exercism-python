@@ -102,8 +102,8 @@ def compile_ingredients(dishes):
     """
 
     compiled = set()
-    for i in range(0, len(dishes)):
-        compiled = compiled.union(set(dishes[i]))
+    for dish in dishes:
+        compiled = compiled.union(set(dish))
     return compiled
 
 
